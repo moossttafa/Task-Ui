@@ -285,8 +285,8 @@ header .side-nav {
     top: 0;
     bottom: 0;
     left: -100%;
-    width: 60vw;
-    background: linear-gradient(45deg, #3e587b, #1e0033);
+    width: 80vw;
+    background: linear-gradient(45deg, #3e587b, #2c2b52);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 1;
@@ -440,6 +440,7 @@ header .side-nav .side-nav__list .navigation .language span {
 @media screen and (max-width: 991px) {
   .sponser {
     padding-bottom: 50px;
+    margin-top: 40px;
   }
   .sponser img {
     display: block;
