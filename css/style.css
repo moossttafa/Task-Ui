@@ -453,15 +453,96 @@ header .side-nav .side-nav__list .navigation .language span {
   padding: 100px 0;
 }
 
-.Testimonials .image-wrapper {
+.Testimonials .Testimonial {
+  position: relative;
+}
+
+.Testimonials .Testimonial .image-wrapper {
   padding-top: 76px;
 }
 
-.Testimonials .image-wrapper img {
+.Testimonials .Testimonial .image-wrapper img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
+}
+
+.Testimonials .Testimonial .image-wrapper .pepole {
+  background: #FFF;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: 47%;
+  left: 47%;
+}
+
+.Testimonials .Testimonial .image-wrapper .pepole img {
+  width: 70px;
+  height: 70px;
+}
+
+.Testimonials .Testimonial .image-wrapper .pepole.pepole-2 {
+  top: 27%;
+  left: 13%;
+}
+
+.Testimonials .Testimonial .image-wrapper .pepole.pepole-3 {
+  top: 65%;
+  left: 20%;
+}
+
+.Testimonials .Testimonial .image-wrapper .pepole.pepole-4 {
+  top: 25%;
+  left: 60%;
+}
+
+.Testimonials .Testimonial .image-wrapper .pepole.pepole-5 {
+  top: 42%;
+  left: 77%;
+}
+
+.Testimonials .Testimonial .image-wrapper .pepole.pepole-6 {
+  top: 75%;
+  left: 85%;
+}
+
+@media screen and (max-width: 991px) {
+  .Testimonials .Testimonial .image-wrapper .pepole img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Testimonials .Testimonial .image-wrapper .pepole {
+    top: 55%;
+    left: 47%;
+  }
+  .Testimonials .Testimonial .image-wrapper .pepole img {
+    width: 30px;
+    height: 30px;
+  }
+  .Testimonials .Testimonial .image-wrapper .pepole.pepole-2 {
+    top: 35%;
+    left: 13%;
+  }
+  .Testimonials .Testimonial .image-wrapper .pepole.pepole-3 {
+    top: 70%;
+    left: 20%;
+  }
+  .Testimonials .Testimonial .image-wrapper .pepole.pepole-4 {
+    top: 35%;
+    left: 60%;
+  }
+  .Testimonials .Testimonial .image-wrapper .pepole.pepole-5 {
+    top: 47%;
+    left: 77%;
+  }
+  .Testimonials .Testimonial .image-wrapper .pepole.pepole-6 {
+    top: 75%;
+    left: 85%;
+  }
 }
 
 .Our-Features {
