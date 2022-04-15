@@ -359,7 +359,7 @@ header{
         background-position: center; 
         width: 100%;
     }
-    .pepole{ 
+    .reviews{ 
       background: #FFF;
       border-radius: 50%;
       padding: 5px;
@@ -371,23 +371,23 @@ header{
         height: 70px;
         // border: 2px solid #FFF;
       }
-     &.pepole--2{
+     &.review--2{
       top : 27%;
       left: 13%;
      } 
-     &.pepole--3{
+     &.review--3{
       top: 65%;
       left: 20%;
      } 
-     &.pepole--4{
+     &.review--4{
       top: 25%;
       left: 60%;
      } 
-     &.pepole--5{
+     &.review--5{
       top: 42%;
       left: 77%;
      } 
-     &.pepole--6{
+     &.review--6{
       top: 75%;
       left: 85%;
      } 
@@ -404,23 +404,23 @@ header{
       } 
         top: 55%;
         left: 47%;
-      &.pepole--2{
+      &.review--2{
         top : 35%;
         left: 13%;
        } 
-       &.pepole--3{
+       &.review--3{
         top: 70%;
         left: 20%;
        } 
-       &.pepole--4{
+       &.review--4{
         top: 35%;
         left: 60%;
        } 
-       &.pepole--5{
+       &.review--5{
         top: 47%;
         left: 77%;
        } 
-       &.pepole--6{
+       &.review--6{
         top: 75%;
         left: 85%;
        } 
@@ -431,6 +431,7 @@ header{
       .comment{
         background-color: #FFF;
         border: 1px solid #C4C4C4;
+        box-shadow: 2px 4px 4px 0px #ccc;
         border-radius: 30px;
         padding: 15px 4px 0;
         position: absolute;
@@ -438,6 +439,7 @@ header{
         width: 280px;
         text-align: center;
         top: 125%;
+        display: none;
         .arrow{
           position: relative;
           span{ 
@@ -517,12 +519,51 @@ header{
           left: 30%;
         }
       }
+    } 
+    &:target{
+      display: block;
+      z-index: 2;
     }
+    &.comment6{
+      @media screen and (max-width: $break-md) {
+        left: -250%;
+        top: 135%; 
+        .arrow{
+          span{
+            left: 57%;
+          }
+        }
+     }
+     @media screen and (max-width: $break-sm) {
+      left: -276%;
+      .arrow{
+        span{
+          left: 50%;
+        }
       }
+    } 
+    @media screen and (max-width: $break-smm) {
+      left: -325%;
+      .arrow{
+        span{
+          left: 63%;
+        }
+      }
+    } 
+    @media screen and (max-width: $break-xsm) {
+      left: -250%;
+      .arrow{
+        span{
+          left: 58%;
+        }
+      }
+    } 
+    }
+  }
      } 
   }
 }
-}
+} 
 // End Testimonials
 // start General style 
 /////////////// start Our Features
