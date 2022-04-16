@@ -9,8 +9,9 @@ toggler.addEventListener('click', ()=>{
 
 closeBtn.addEventListener('click', ()=> sideNav.style.left = '-100%');
 
-// Testimonials opent details 
- 
-// window.addEventListener("click", function() {
-  
-// });
+// Testimonials opent details  
+$(document).ready(function(){
+    $(".reviews").on("click" , function(){
+        $(this).find(".comment").toggleClass("active"); 
+    });
+});

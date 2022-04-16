@@ -519,11 +519,7 @@ header{
           left: 30%;
         }
       }
-    } 
-    &:target{
-      display: block;
-      z-index: 2;
-    }
+    }  
     &.comment6{
       @media screen and (max-width: $break-md) {
         left: -250%;
@@ -558,6 +554,10 @@ header{
         }
       }
     } 
+    }
+    &.active{
+      display: block;
+      z-index: 2;
     }
   }
      } 

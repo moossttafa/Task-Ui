@@ -659,11 +659,6 @@ header .side-nav .side-nav__list .navigation .language span {
   }
 }
 
-.Testimonials .Testimonial .image-wrapper .reviews .comment:target {
-  display: block;
-  z-index: 2;
-}
-
 @media screen and (max-width: 991px) {
   .Testimonials .Testimonial .image-wrapper .reviews .comment.comment6 {
     left: -250%;
@@ -699,6 +694,11 @@ header .side-nav .side-nav__list .navigation .language span {
   .Testimonials .Testimonial .image-wrapper .reviews .comment.comment6 .arrow span {
     left: 58%;
   }
+}
+
+.Testimonials .Testimonial .image-wrapper .reviews .comment.active {
+  display: block;
+  z-index: 2;
 }
 
 .Our-Features {
