@@ -374,6 +374,26 @@ header{
      &.review--2{
       top : 27%;
       left: 13%;
+			@media screen and (max-width: $break-sm) {
+				.comment{
+					left : -225%;
+					.arrow{
+						span{
+							left: 40%;
+						}
+					}
+				}
+			}
+			@media screen and (max-width: $break-smm) {
+				.comment{
+					left : -100%;
+					.arrow{
+						span{
+							left: 13%;
+						}
+					}
+				}
+			}
      } 
      &.review--3{
       top: 65%;
@@ -407,6 +427,7 @@ header{
       &.review--2{
         top : 35%;
         left: 13%;
+				
        } 
        &.review--3{
         top: 70%;
@@ -488,7 +509,7 @@ header{
           top: 135%; 
        }
        @media screen and (max-width: $break-sm) {
-        left: -220%;
+        left: -325%;
         top: 140%; 
         width: 200px;
         h3{
@@ -499,12 +520,12 @@ header{
         }
         .arrow{
           span{
-            left: 38%;
+            left: 60%;
           }
         }
      }
      @media screen and (max-width: $break-xsm) {
-      left: -140%;
+      left: -235%;
       top: 140%; 
       width: 150px;
       h3{
@@ -516,7 +537,7 @@ header{
       }
       .arrow{
         span{
-          left: 30%;
+          left: 55%;
         }
       }
     }  
@@ -555,12 +576,14 @@ header{
       }
     } 
     }
-    &.active{
-      display: block;
-      z-index: 2;
-    }
   }
-     } 
+	&.review--active{
+		.comment{
+			display: block;
+			z-index: 2;
+		}
+	}
+	} 
   }
 }
 } 
